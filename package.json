@@ -5,7 +5,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "ts-node main.ts",
-    "start:redis": "docker run --name redis-stack -p 6379:6379 -d redis/redis-stack-server",
+    "start:redis": "docker run --name redis-stack -p 6379:6379 -p 8001:8001 -d redis/redis-stack",
     "stop:redis": "docker stop redis-stack && docker rm redis-stack"
   },
   "author": "",
