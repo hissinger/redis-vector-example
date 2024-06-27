@@ -1,0 +1,22 @@
+{
+  "name": "redis_vector",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "ts-node main.ts",
+    "start:redis": "docker run --name redis-stack -p 6379:6379 -d redis/redis-stack-server",
+    "stop:redis": "docker stop redis-stack && docker rm redis-stack"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@xenova/transformers": "^2.17.2",
+    "redis": "^4.6.14"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.9",
+    "@types/redis": "^4.0.11"
+  }
+}
